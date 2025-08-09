@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Factory’s — Restaurant Traditionnel à Alençon</title>
+  <meta name="description" content="Food Factory’s à Alençon - Restaurant traditionnel chaleureux. Plats faits maison, produits frais locaux. Réservation en ligne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #b54444;
+      --accent-2: #d45555;
+      --bg: #fff8f4;
+      --muted: #6e6e6e;
+      --muted-sm: #8a8a8a;
+      --txt-primary: #3e2e2e;
+      --txt-secondary: #564545;
+      --shadow: rgba(0,0,0,0.08);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--txt-primary);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 12px;
+    }
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 14px 0;
+      box-shadow: 0 2px 6px var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .muted-sm {
+      font-size: 0.85rem;
+      color: var(--muted-sm);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 18px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .cta {
+      background: var(--accent-2);
+      padding: 8px 16px;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    main {
+      margin-top: 28px;
+    }
+    .hero {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      background: #f9f0ec;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .hero-card {
+      flex: 1 1 400px;
+    }
+    .eyebrow {
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin: 0 0 12px;
+      color: var(--accent-2);
+    }
+    .hero-text {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: var(--txt-secondary);
+    }
+    .btn-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn-outline:hover {
+      background: var(--accent);
+      color: white;
+    }
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 14px var(--shadow);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">Food Factory’s</div>
+        <div class="muted-sm">Alençon</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#carte">Menu</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#reservation" class="cta">Réserver</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="accueil" class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">Bienvenue au Food Factory’s</div>
+        <h1 class="hero-title">Restaurant Traditionnel à Alençon</h1>
+        <p class="hero-text">Découvrez notre cuisine authentique, élaborée à partir de produits frais et locaux. Dans une ambiance chaleureuse, savourez des recettes traditionnelles revisitées avec passion.</p>
+        <div class="btn-row">
+          <a href="#carte" class="btn btn-outline">Voir le menu</a>
+          <a href="#reservation" class="btn" style="background:var(--accent-2);color:#fff;border-radius:12px">Réserver en ligne</a>
+        </div>
+        <div style="margin-top:18px;color:var(--muted);font-size:14px">Ouvert du mardi au dimanche — Service midi & soir</div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-plat.jpg" alt="Plat traditionnel maison à Alençon"/>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">© <strong>Food Factory’s</strong> — Restaurant Traditionnel à Alençon · Tous droits réservés</div>
+  </footer>
+</body>
+</html>
